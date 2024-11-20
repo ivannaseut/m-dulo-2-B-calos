@@ -1,0 +1,82 @@
+/*Selector universal*/
+*{
+    padding: 0;
+    margin: 0;
+}
+
+/*Selector de tipo: etiqueta*/
+body{
+    background-color: aquamarine;
+    /*ajustar las tarjetas a varias líneas*/
+main {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+}
+    
+
+h1{
+    color: beige;
+}
+
+/*Selector de tipo: clase*/
+/*reutilizar estilos*/
+.tarjeta {
+    width: 320px;
+    background-color: blueviolet;
+    border-radius: 3%;
+    /*centrando elementos*/
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 8px; /*Separación*/
+    transition: all 0.4s ease-in-out; /*Transición suave*/
+}
+
+.tarjeta:hover {
+    background-color: aliceblue;
+    transform: scale(1.05);
+    transform:rotate(3deg) 
+
+}
+
+.tarjeta .caja-contenedora {
+    width: 200px; 
+    background-color: blue;
+}
+
+.tarjeta img {
+    width: 100%;
+    object-fit: cover;
+    border-radius: 5%;
+}
+
+.tarjeta p {
+    color: black;
+    font-size: 20px;
+}
+
+/*selector de tipo: id*/
+#Gato {
+    color: antiquewhite;
+}
+
+#Perro {
+    color: blue;
+}
+
+#Cuyo {
+    color: brown;
+}
+
+#Paloma {
+    color: rgb(47, 170, 9);
+}
+
+#Vaca {
+    color: blanchedalmond;
+}
+
