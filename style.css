@@ -2,29 +2,33 @@
 *{
     padding: 0;
     margin: 0;
+    box-sizing: border-box;
 }
 
 /*Selector de tipo: etiqueta*/
 body{
     background-color: aquamarine;
-    /*ajustar las tarjetas a varias líneas*/
-main {
+        font-family: "Antic Slab", serif;
+        font-weight: 400;
+        font-style: normal;
+}
+    
+main{
+    /*Ajustar a las tarjetas varias líneas*/
     display: flex;
     flex-wrap: wrap;
 }
-
-}
     
-
 h1{
     color: beige;
 }
 
 /*Selector de tipo: clase*/
 /*reutilizar estilos*/
-.tarjeta {
+.tarjeta{
     width: 320px;
-    background-color: blueviolet;
+    height: 335px;
+    background-color: rgb(183, 100, 255);
     border-radius: 3%;
     /*centrando elementos*/
     text-align: center;
@@ -32,10 +36,17 @@ h1{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin: 8px; /*Separación*/
+    margin: 10px;
+    padding: 12px;
+    border: 2px solid yellow;
     transition: all 0.4s ease-in-out; /*Transición suave*/
 }
 
+.titulo-tarjeta {
+    margin-bottom: 10px;
+}
+
+/*Pseudoclase Hover para crear animaciones*/
 .tarjeta:hover {
     background-color: aliceblue;
     transform: scale(1.05);
@@ -45,21 +56,22 @@ h1{
 
 .tarjeta .caja-contenedora {
     width: 200px; 
-    background-color: blue;
 }
 
 .tarjeta img {
-    width: 100%;
+    width: 150px;
+    height: 150px;
     object-fit: cover;
     border-radius: 5%;
 }
 
 .tarjeta p {
     color: black;
-    font-size: 20px;
+    font-size: 15px;
 }
 
 /*selector de tipo: id*/
+/*Es único*/
 #Gato {
     color: antiquewhite;
 }
